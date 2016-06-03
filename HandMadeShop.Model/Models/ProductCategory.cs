@@ -12,7 +12,7 @@ namespace HandMadeShop.Model.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }
 
-        [MaxLength(256)]
+        [MaxLength(256)]    
         [Required]
         public string Name { set; get; }
 
