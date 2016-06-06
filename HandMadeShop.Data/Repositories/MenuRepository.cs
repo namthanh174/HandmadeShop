@@ -3,7 +3,7 @@ using HandMadeShop.Model.Models;
 
 namespace HandMadeShop.Data.Repositories
 {
-    public interface IMenuRepository
+    public interface IMenuRepository : IRepository<Menu>
     {
     }
 

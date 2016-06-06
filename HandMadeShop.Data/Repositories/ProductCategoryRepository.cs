@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace HandMadeShop.Data.Repositories
 {
-    public interface IProductCategoryRepository
+    public interface IProductCategoryRepository : IRepository<ProductCategory>
     {
         IEnumerable<ProductCategory> GetByAlias(string alias);
     }
@@ -19,7 +19,7 @@ namespace HandMadeShop.Data.Repositories
         }
         public IEnumerable<ProductCategory> GetByAlias(string alias)
         {
-            return this.DbContext.ProductCategories.Where(x=> x.Alias == alias);
+            return this.DbContext.ProductCategories.Where(x => x.Alias == alias);
         }
     }
 }

@@ -3,7 +3,7 @@ using HandMadeShop.Model.Models;
 
 namespace HandMadeShop.Data.Repositories
 {
-    public interface IOrderDetailRepository
+    public interface IOrderDetailRepository : IRepository<OrderDetail>
     {
     }
 

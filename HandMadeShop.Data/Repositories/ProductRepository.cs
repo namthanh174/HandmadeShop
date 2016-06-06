@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HandMadeShop.Data.Repositories
 {
-    public interface IProductRepository
+    public interface IProductRepository : IRepository<Product>
     {
 
     }
