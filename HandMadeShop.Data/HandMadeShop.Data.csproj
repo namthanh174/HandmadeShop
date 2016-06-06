@@ -49,7 +49,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HandMadeShopDbContext.cs" />
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\IDbFactory.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\201606060345217_InitialDB.cs" />
+    <Compile Include="Migrations\201606060345217_InitialDB.Designer.cs">
+      <DependentUpon>201606060345217_InitialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ProductCategoryRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -60,6 +75,15 @@
       <Project>{a5cdb0c3-c6cb-4f57-835b-20b6800e3c7d}</Project>
       <Name>HandMadeShop.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HandMadeShop.Model\HandMadeShop.Model.csproj">
+      <Project>{8e4d07db-e930-4e2b-bea0-45dfe5bcddbe}</Project>
+      <Name>HandMadeShop.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201606060345217_InitialDB.resx">
+      <DependentUpon>201606060345217_InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
