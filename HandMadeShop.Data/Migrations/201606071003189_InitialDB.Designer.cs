@@ -13,7 +13,7 @@ namespace HandMadeShop.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201606060345217_InitialDB"; }
+            get { return "201606071003189_InitialDB"; }
         }
         
         string IMigrationMetadata.Source

@@ -1,10 +1,5 @@
 ﻿using HandMadeShop.Model.Models;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HandMadeShop.Data
 {
@@ -36,8 +31,6 @@ namespace HandMadeShop.Data
 
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-           
         }
-
     }
 }

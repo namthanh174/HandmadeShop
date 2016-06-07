@@ -1,4 +1,7 @@
-﻿namespace HandMadeShop.Data.Infrastructure
+﻿using System;
+
+
+namespace HandMadeShop.Data.Infrastructure
 {
     public class DbFactory : Disposable, IDbFactory
     {
